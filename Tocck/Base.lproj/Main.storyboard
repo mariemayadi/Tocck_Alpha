@@ -50,13 +50,24 @@
                     <view key="view" contentMode="scaleToFill" id="TqA-Xy-YLk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Mb-V2m">
+                                <rect key="frame" x="21" y="72" width="552" height="514"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QS9-6a-6HL" id="Rcg-l3-f2l"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Scene_2" id="ziG-vx-Pkb"/>
+                    <connections>
+                        <outlet property="mapView" destination="gve-Mb-V2m" id="coA-95-f3J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idA-hX-h1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1721" y="-559"/>
+            <point key="canvasLocation" x="1717" y="-557"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCG-Bo-Zft">

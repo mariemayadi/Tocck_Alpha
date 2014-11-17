@@ -16,6 +16,7 @@
 		943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		943B4BEE1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472E68B1A1A1CCC00475D7B /* myViewController2.swift */; };
+		9472E6901A1A26BC00475D7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E68F1A1A26BC00475D7B /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		943B4BEF1A1A120800119EA2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		9472E68B1A1A1CCC00475D7B /* myViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController2.swift; sourceTree = "<group>"; };
+		9472E68F1A1A26BC00475D7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9472E6901A1A26BC00475D7B /* MapKit.framework in Frameworks */,
 				943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +70,7 @@
 		943B4BBD1A1A105A00119EA2 = {
 			isa = PBXGroup;
 			children = (
+				9472E68F1A1A26BC00475D7B /* MapKit.framework */,
 				943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */,
 				943B4BC81A1A105A00119EA2 /* Tocck */,
 				943B4BDE1A1A105A00119EA2 /* TocckTests */,
