@@ -27,7 +27,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="V0a-5x-Ldm">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="l1U-Bg-BBs" kind="showDetail" identifier="Scene1" id="hXV-bz-EcY"/>
+                                <segue destination="QS9-6a-6HL" kind="push" id="jM8-3S-4SX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -39,25 +39,24 @@
             </objects>
             <point key="canvasLocation" x="975" y="-557"/>
         </scene>
-        <!--My View Controller2-->
-        <scene sceneID="wvR-Lu-FjJ">
+        <!--Scene_2-->
+        <scene sceneID="tom-dQ-S7q">
             <objects>
-                <viewController id="l1U-Bg-BBs" customClass="myViewController2" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QS9-6a-6HL" customClass="myViewController2" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3YU-RZ-YjS"/>
-                        <viewControllerLayoutGuide type="bottom" id="Eln-CF-ufI"/>
+                        <viewControllerLayoutGuide type="top" id="Gat-3s-WLr"/>
+                        <viewControllerLayoutGuide type="bottom" id="9g5-mR-eKG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="85P-su-if2">
+                    <view key="view" contentMode="scaleToFill" id="TqA-Xy-YLk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationItem key="navigationItem" title="Scene_2" id="ziG-vx-Pkb"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5S6-Tq-NIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idA-hX-h1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693" y="-557"/>
+            <point key="canvasLocation" x="1721" y="-559"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCG-Bo-Zft">
