@@ -15,6 +15,7 @@
 		943B4BE21A1A105A00119EA2 /* TocckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4BE11A1A105A00119EA2 /* TocckTests.swift */; };
 		943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		943B4BEE1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
+		9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472E68B1A1A1CCC00475D7B /* myViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		943B4BE11A1A105A00119EA2 /* TocckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TocckTests.swift; sourceTree = "<group>"; };
 		943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		943B4BEF1A1A120800119EA2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		9472E68B1A1A1CCC00475D7B /* myViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				943B4BCD1A1A105A00119EA2 /* ViewController.swift */,
 				943B4BEF1A1A120800119EA2 /* Bridge-Header.h */,
 				943B4BCF1A1A105A00119EA2 /* Main.storyboard */,
+				9472E68B1A1A1CCC00475D7B /* myViewController2.swift */,
 				943B4BD21A1A105A00119EA2 /* Images.xcassets */,
 				943B4BD41A1A105A00119EA2 /* LaunchScreen.xib */,
 				943B4BC91A1A105A00119EA2 /* Supporting Files */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				943B4BCE1A1A105A00119EA2 /* ViewController.swift in Sources */,
+				9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */,
 				943B4BCC1A1A105A00119EA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,7 @@
 				943B4BE71A1A105A00119EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		943B4BE81A1A105A00119EA2 /* Build configuration list for PBXNativeTarget "TocckTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +438,7 @@
 				943B4BEA1A1A105A00119EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
