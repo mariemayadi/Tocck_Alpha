@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Scene_1-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Scene_1" id="ZfW-Gy-Rxk">
+                    <navigationItem key="navigationItem" title="Home" id="ZfW-Gy-Rxk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="V0a-5x-Ldm">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="975" y="-557"/>
         </scene>
-        <!--Scene_2-->
+        <!--Locate ME-->
         <scene sceneID="tom-dQ-S7q">
             <objects>
                 <viewController id="QS9-6a-6HL" customClass="myViewController2" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,15 +52,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Mb-V2m">
-                                <rect key="frame" x="21" y="72" width="552" height="514"/>
+                                <rect key="frame" x="21" y="72" width="552" height="331"/>
                                 <connections>
                                     <outlet property="delegate" destination="QS9-6a-6HL" id="Rcg-l3-f2l"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-jf-feH">
+                                <rect key="frame" x="277" y="458" width="66" height="30"/>
+                                <state key="normal" title="Tell them!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tellThem:" destination="QS9-6a-6HL" eventType="touchUpInside" id="w5Z-yx-mbz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Scene_2" id="ziG-vx-Pkb"/>
+                    <navigationItem key="navigationItem" title="Locate ME" id="ziG-vx-Pkb"/>
                     <connections>
                         <outlet property="mapView" destination="gve-Mb-V2m" id="coA-95-f3J"/>
                     </connections>
