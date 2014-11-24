@@ -28,8 +28,8 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
         
     }
-    @IBOutlet weak var mapView: MKMapView!
     
+    @IBOutlet weak var mapView: MKMapView!
     //NOTE:
     //The CLLocationManagerDelegate protocol defines the methods used to receive location and heading updates from a CLLocationManager object.
     
@@ -41,7 +41,7 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
     var longitude :CLLocationDegrees = -72.637915
     
     //A structure that defines the area spanned by a map region.
-    let span:MKCoordinateSpan = MKCoordinateSpanMake(0.001, 0.001)
+    let span:MKCoordinateSpan = MKCoordinateSpanMake(0.075, 0.075)
     var buildingAnnotation = MKPointAnnotation()
     
     

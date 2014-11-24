@@ -44,13 +44,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="gve-Mb-V2m">
-                                <rect key="frame" x="0.0" y="0.0" width="32" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="QS9-6a-6HL" id="Rcg-l3-f2l"/>
-                                </connections>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V0c-jf-feH">
                                 <rect key="frame" x="127" y="494" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,17 +54,24 @@
                                     <action selector="tellThem:" destination="QS9-6a-6HL" eventType="touchUpInside" id="w5Z-yx-mbz"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="MwT-jl-d0C">
+                                <rect key="frame" x="16" y="80" width="296" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="TqA-Xy-YLk" id="d1W-dc-XsF"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Locate ME" id="ziG-vx-Pkb"/>
                     <connections>
-                        <outlet property="mapView" destination="gve-Mb-V2m" id="coA-95-f3J"/>
+                        <outlet property="mapView" destination="MwT-jl-d0C" id="QvS-RB-Fb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idA-hX-h1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="-563"/>
+            <point key="canvasLocation" x="978" y="-717"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCG-Bo-Zft">
