@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import MapKit
 import CoreLocation
 import Social
+import MapKit
 
 class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-
+    
     @IBAction func tellThem(sender: AnyObject) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
             var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             facebookSheet.setInitialText("I am using Tocck in a new location")
             self.presentViewController(facebookSheet, animated: true, completion: nil)
-        
+            
         } else {
             
             var alert = UIAlertController(title: "Accounts", message: "Please log in to Facebook to share", preferredStyle: UIAlertControllerStyle.Alert)
@@ -26,7 +26,7 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
             
             self.presentViewController(alert, animated: true, completion: nil)
         }
-    
+        
     }
     @IBOutlet weak var mapView: MKMapView!
     
