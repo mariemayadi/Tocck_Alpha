@@ -18,6 +18,8 @@ class myViewController4: UIViewController {
     
     @IBOutlet weak var age1: UITextField!
     
+    @IBOutlet weak var profilePic1: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -135,23 +135,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Rnn-ES-Agf">
-                                <rect key="frame" x="112" y="116" width="97" height="30"/>
+                                <rect key="frame" x="178" y="122" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="qSz-JN-V8I">
-                                <rect key="frame" x="112" y="160" width="97" height="30"/>
+                                <rect key="frame" x="178" y="160" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5vz-JM-Acq">
-                                <rect key="frame" x="112" y="198" width="97" height="30"/>
+                                <rect key="frame" x="178" y="198" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Nyb-mB-mkO">
+                                <rect key="frame" x="12" y="118" width="158" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -160,6 +164,7 @@
                         <outlet property="age1" destination="5vz-JM-Acq" id="bfg-Bf-3QJ"/>
                         <outlet property="firstName1" destination="Rnn-ES-Agf" id="viP-hW-2yW"/>
                         <outlet property="lastName1" destination="qSz-JN-V8I" id="isC-i6-Fhx"/>
+                        <outlet property="profilePic1" destination="Nyb-mB-mkO" id="hzZ-Ar-WBs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDX-BO-xDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
