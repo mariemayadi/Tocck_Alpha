@@ -152,7 +152,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Nyb-mB-mkO">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-default-no-profile-pic.jpg" id="Nyb-mB-mkO">
                                 <rect key="frame" x="12" y="118" width="158" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -190,6 +190,9 @@
             <point key="canvasLocation" x="62.399999999999999" y="-527.29333333333329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook-default-no-profile-pic.jpg" width="1290" height="1290"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
