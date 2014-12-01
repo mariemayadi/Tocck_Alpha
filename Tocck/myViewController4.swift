@@ -31,6 +31,7 @@ class myViewController4: UIViewController {
                 self.person = object
                 self.firstName1.text = self.person["firstName"] as String
                 self.lastName1.text = self.person["lastName"] as String
+                self.age1.text = self.person["age"] as String
             } else {
             }
         }
