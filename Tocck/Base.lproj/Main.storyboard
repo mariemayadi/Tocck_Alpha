@@ -153,18 +153,62 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-default-no-profile-pic.jpg" id="Nyb-mB-mkO">
-                                <rect key="frame" x="12" y="118" width="158" height="113"/>
+                                <rect key="frame" x="50" y="118" width="115" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="browse..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P4e-0N-hTO">
+                                <rect key="frame" x="16" y="88" width="60" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_facebook_profile_picture.jpg" id="9OA-3P-DTL">
+                                <rect key="frame" x="50" y="291" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="r5R-Im-CCf">
+                                <rect key="frame" x="16" y="338" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="NVV-5C-aIc">
+                                <rect key="frame" x="178" y="297" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="M6P-sN-qP2">
+                                <rect key="frame" x="178" y="338" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="j0R-S5-sTE">
+                                <rect key="frame" x="178" y="376" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="GRe-Jd-kLP" userLabel="Button1">
+                                <rect key="frame" x="16" y="164" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Make new friends" id="xab-Sj-Na9"/>
                     <connections>
                         <outlet property="age1" destination="5vz-JM-Acq" id="bfg-Bf-3QJ"/>
+                        <outlet property="age2" destination="j0R-S5-sTE" id="7D6-4A-dP4"/>
                         <outlet property="firstName1" destination="Rnn-ES-Agf" id="viP-hW-2yW"/>
+                        <outlet property="firstName2" destination="NVV-5C-aIc" id="8Ue-xB-w4f"/>
                         <outlet property="lastName1" destination="qSz-JN-V8I" id="isC-i6-Fhx"/>
+                        <outlet property="lastName2" destination="M6P-sN-qP2" id="a8D-1c-Opb"/>
                         <outlet property="profilePic1" destination="Nyb-mB-mkO" id="hzZ-Ar-WBs"/>
+                        <outlet property="profilePic2" destination="9OA-3P-DTL" id="3Aw-LD-0Zx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDX-BO-xDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,6 +236,7 @@
     </scenes>
     <resources>
         <image name="facebook-default-no-profile-pic.jpg" width="1290" height="1290"/>
+        <image name="female_facebook_profile_picture.jpg" width="250" height="250"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

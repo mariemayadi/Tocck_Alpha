@@ -11,14 +11,22 @@ import UIKit
 class myViewController4: UIViewController {
 
     var person = PFObject(className:"fiveSampleUsers")
+    var person2 = PFObject(className:"oneTestUser")
     
+    //First Match.
     @IBOutlet weak var firstName1: UITextField!
-    
     @IBOutlet weak var lastName1: UITextField!
-    
     @IBOutlet weak var age1: UITextField!
-    
     @IBOutlet weak var profilePic1: UIImageView!
+    
+    //Second Match
+    
+    @IBOutlet weak var firstName2: UITextField!
+    @IBOutlet weak var lastName2: UITextField!
+    @IBOutlet weak var age2: UITextField!
+    
+    @IBOutlet weak var profilePic2: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +34,8 @@ class myViewController4: UIViewController {
         // Do any additional setup after loading the view.
 
         
-        var queryTextInfo = PFQuery(className:"fiveSampleUsers")
-        queryTextInfo.getFirstObjectInBackgroundWithBlock {
+        var firstQuery = PFQuery(className:"fiveSampleUsers")
+        firstQuery.getFirstObjectInBackgroundWithBlock {
             (object: PFObject!, error: NSError!) -> Void in
             if object != nil {
                 self.person = object
@@ -39,6 +47,37 @@ class myViewController4: UIViewController {
             } else {
             }
         }
+        
+        var secondQuery = PFQuery(className:"fiveSampleUsers")
+        secondQuery.getObjectInBackgroundWithId("9VwDICrSSy") {
+            (object: PFObject!, error: NSError!) -> Void in
+            if error == nil {
+                NSLog("%@", object)
+                self.person2 = object
+                self.firstName2.text = self.person2["firstName"] as String
+                self.lastName2.text = self.person2["lastName"] as String
+                self.age2.text = self.person2["age"] as String
+                //self.profilePic1.image = self.person["picture"] as? UIImage
+                //self.profilePic1.image =
+            } else {
+                NSLog("%@", error)
+            }
+        }
+        
+        
+//        var queryNewInfo = PFQuery(className:"oneTestUser")
+//        queryNewInfo.getFirstObjectInBackgroundWithBlock {
+//            (object: PFObject!, error: NSError!) -> Void in
+//            if object != nil {
+//                self.person2 = object
+//                self.firstName2.text = self.person2["firstName"] as String
+//                self.lastName2.text = self.person2["lastName"] as String
+//                self.age2.text = self.person2["age"] as String
+//                //self.profilePic1.image = self.person["picture"] as? UIImage
+//                //self.profilePic1.image =
+//            } else {
+//            }
+//        }
         
         person.ACL = PFACL(user: PFUser.currentUser())
         

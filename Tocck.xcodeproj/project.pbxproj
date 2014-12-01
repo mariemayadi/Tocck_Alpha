@@ -18,6 +18,7 @@
 		946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A431A2C9EB500479EF5 /* myViewController3.swift */; };
 		946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A451A2CA52A00479EF5 /* myViewController4.swift */; };
 		946A0A481A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */; };
+		946A0A4C1A2CF11700479EF5 /* female_facebook_profile_picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */; };
 		9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472E68B1A1A1CCC00475D7B /* myViewController2.swift */; };
 		9472E6901A1A26BC00475D7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E68F1A1A26BC00475D7B /* MapKit.framework */; };
 		9472E6E81A23CAA900475D7B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */; };
@@ -62,6 +63,7 @@
 		946A0A431A2C9EB500479EF5 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
 		946A0A451A2CA52A00479EF5 /* myViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController4.swift; sourceTree = "<group>"; };
 		946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "facebook-default-no-profile-pic.jpg"; path = "../../../profile_user_images/facebook-default-no-profile-pic.jpg"; sourceTree = "<group>"; };
+		946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = female_facebook_profile_picture.jpg; path = ../../../profile_user_images/female_facebook_profile_picture.jpg; sourceTree = "<group>"; };
 		9472E68B1A1A1CCC00475D7B /* myViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController2.swift; sourceTree = "<group>"; };
 		9472E68F1A1A26BC00475D7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -152,6 +154,7 @@
 		943B4BC81A1A105A00119EA2 /* Tocck */ = {
 			isa = PBXGroup;
 			children = (
+				946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */,
 				946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */,
 				943B4BCB1A1A105A00119EA2 /* AppDelegate.swift */,
 				943B4BCD1A1A105A00119EA2 /* ViewController.swift */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				943B4BD11A1A105A00119EA2 /* Main.storyboard in Resources */,
+				946A0A4C1A2CF11700479EF5 /* female_facebook_profile_picture.jpg in Resources */,
 				943B4BD61A1A105A00119EA2 /* LaunchScreen.xib in Resources */,
 				943B4BD31A1A105A00119EA2 /* Images.xcassets in Resources */,
 				946A0A481A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg in Resources */,
