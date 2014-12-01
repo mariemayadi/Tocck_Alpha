@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
+    //var person = PFObject(className:"Person")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,17 @@ class ViewController: UIViewController, FBLoginViewDelegate {
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
     }
+    
+//    //Saving a Person
+//    func savePerson(){
+//        person.saveInBackgroundWithBlock { (success, error) -> Void in
+//            if(success) {
+//                NSLog("all done")
+//            } else {
+//                // handle error
+//            }
+//        }
+//    }
     
     //Facebook delegate methods
     

@@ -36,7 +36,7 @@
             </objects>
             <point key="canvasLocation" x="540" y="-455"/>
         </scene>
-        <!--Locate ME-->
+        <!--Who's around?-->
         <scene sceneID="tom-dQ-S7q">
             <objects>
                 <viewController id="QS9-6a-6HL" customClass="myViewController2" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,14 +64,54 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Locate ME" id="ziG-vx-Pkb"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Who's around?" id="ziG-vx-Pkb" userLabel="Who's around?">
+                        <barButtonItem key="rightBarButtonItem" title="Check" id="EnY-0W-gaX">
+                            <connections>
+                                <segue destination="ShK-Wz-IeK" kind="push" id="G5Z-eh-rGL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="MwT-jl-d0C" id="QvS-RB-Fb9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idA-hX-h1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="-717"/>
+            <point key="canvasLocation" x="970" y="-718"/>
+        </scene>
+        <!--Find them!-->
+        <scene sceneID="asF-i8-ne1">
+            <objects>
+                <viewController id="ShK-Wz-IeK" customClass="myViewController3" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgB-34-yuZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How far is far?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E0W-Bl-jwp">
+                                <rect key="frame" x="53" y="82" width="215" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="vSd-DR-gKt">
+                                <rect key="frame" x="112" y="175" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="numMiles:" destination="ShK-Wz-IeK" eventType="editingDidEnd" id="0tq-ez-d4l"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find them!" id="R5y-HT-exF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laf-jc-C3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="-766"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCG-Bo-Zft">

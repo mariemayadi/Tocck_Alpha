@@ -31,6 +31,7 @@
 		9472E6F71A23CACA00475D7B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F31A23CACA00475D7B /* Parse.framework */; };
 		9472E6F81A23CACA00475D7B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F41A23CACA00475D7B /* ParseFacebookUtils.framework */; };
 		9472E6F91A23CACA00475D7B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F51A23CACA00475D7B /* ParseUI.framework */; };
+		94BF33F31A2C29BE00CF7644 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF33F21A2C29BE00CF7644 /* myViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		9472E6F31A23CACA00475D7B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9472E6F41A23CACA00475D7B /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		9472E6F51A23CACA00475D7B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		94BF33F21A2C29BE00CF7644 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				943B4BCB1A1A105A00119EA2 /* AppDelegate.swift */,
 				943B4BCD1A1A105A00119EA2 /* ViewController.swift */,
+				94BF33F21A2C29BE00CF7644 /* myViewController3.swift */,
 				943B4BEF1A1A120800119EA2 /* Bridge-Header.h */,
 				943B4BCF1A1A105A00119EA2 /* Main.storyboard */,
 				9472E68B1A1A1CCC00475D7B /* myViewController2.swift */,
@@ -285,6 +288,7 @@
 			files = (
 				943B4BCE1A1A105A00119EA2 /* ViewController.swift in Sources */,
 				9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */,
+				94BF33F31A2C29BE00CF7644 /* myViewController3.swift in Sources */,
 				943B4BCC1A1A105A00119EA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
