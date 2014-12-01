@@ -11,7 +11,6 @@ import UIKit
 class myViewController4: UIViewController {
 
     var person = PFObject(className:"fiveSampleUsers")
-    var photo = PFObject(className:"fiveSampleUsers")
     
     @IBOutlet weak var firstName1: UITextField!
     
@@ -28,7 +27,6 @@ class myViewController4: UIViewController {
 
         
         var queryTextInfo = PFQuery(className:"fiveSampleUsers")
-        var queryImage = photo["picture"] as PFFile
         queryTextInfo.getFirstObjectInBackgroundWithBlock {
             (object: PFObject!, error: NSError!) -> Void in
             if object != nil {
@@ -38,13 +36,6 @@ class myViewController4: UIViewController {
                 self.age1.text = self.person["age"] as String
                 //self.profilePic1.image = self.person["picture"] as? UIImage
                 //self.profilePic1.image =
-            } else {
-            }
-        }
-        queryImage.getDataInBackgroundWithBlock {
-            (photo: NSData!, error: NSError!) -> Void in
-            if !(error != nil) {
-                self.profilePic1.image = self.photo["picture"] as? UIImage
             } else {
             }
         }
