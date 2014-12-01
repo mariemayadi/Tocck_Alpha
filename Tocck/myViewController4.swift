@@ -11,6 +11,7 @@ import UIKit
 class myViewController4: UIViewController {
 
     var person = PFObject(className:"fiveSampleUsers")
+    var photo = PFObject(className:"fiveSampleUsers")
     
     @IBOutlet weak var firstName1: UITextField!
     
@@ -24,16 +25,26 @@ class myViewController4: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
         
-        
-        var query = PFQuery(className:"fiveSampleUsers")
-        query.getFirstObjectInBackgroundWithBlock {
+        var queryTextInfo = PFQuery(className:"fiveSampleUsers")
+        var queryImage = photo["picture"] as PFFile
+        queryTextInfo.getFirstObjectInBackgroundWithBlock {
             (object: PFObject!, error: NSError!) -> Void in
             if object != nil {
                 self.person = object
                 self.firstName1.text = self.person["firstName"] as String
                 self.lastName1.text = self.person["lastName"] as String
                 self.age1.text = self.person["age"] as String
+                //self.profilePic1.image = self.person["picture"] as? UIImage
+                //self.profilePic1.image =
+            } else {
+            }
+        }
+        queryImage.getDataInBackgroundWithBlock {
+            (photo: NSData!, error: NSError!) -> Void in
+            if !(error != nil) {
+                self.profilePic1.image = self.photo["picture"] as? UIImage
             } else {
             }
         }
@@ -42,6 +53,19 @@ class myViewController4: UIViewController {
         
     }
 
+    
+    
+//    let userImageFile = userPhoto["imageFile"] as PFFile
+//    userImageFile.getDataInBackgroundWithBlock {
+//    (imageData: NSData!, error: NSError!) -> Void in
+//    if !error {
+//    let image = UIImage(data:imageData)
+//    }
+//    }
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
