@@ -17,8 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        //FACEBOOK settings
         FBLoginView.self
         FBProfilePictureView.self
+        
+        //PARSE settings
+        //Connect to the Parse "application"
+        var applicationId = "iAp3eONfojjwH4tUZ9hQ1gjl4rO7gZGeG5yNgQd6"
+        var clientKey = "uauaRkn8FUFtf9EY4fflnJWLju10vl8dhOtDp0IJ"
+        Parse.setApplicationId(applicationId, clientKey: clientKey)
+        //Create and "automatic user" rather than requiring login
+        PFUser.enableAutomaticUser()
         
         return true
     }
