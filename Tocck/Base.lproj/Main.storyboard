@@ -129,17 +129,42 @@
         <!--Make new friends-->
         <scene sceneID="2no-QH-zN1">
             <objects>
-                <viewController id="daB-wV-hVt" sceneMemberID="viewController">
+                <viewController id="daB-wV-hVt" customClass="myViewController4" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EWo-lP-z52">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Rnn-ES-Agf">
+                                <rect key="frame" x="112" y="116" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="qSz-JN-V8I">
+                                <rect key="frame" x="112" y="160" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5vz-JM-Acq">
+                                <rect key="frame" x="112" y="198" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Make new friends" id="xab-Sj-Na9"/>
+                    <connections>
+                        <outlet property="age1" destination="5vz-JM-Acq" id="bfg-Bf-3QJ"/>
+                        <outlet property="firstName1" destination="Rnn-ES-Agf" id="viP-hW-2yW"/>
+                        <outlet property="lastName1" destination="qSz-JN-V8I" id="isC-i6-Fhx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDX-BO-xDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="-942"/>
+            <point key="canvasLocation" x="1630" y="-942"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCG-Bo-Zft">

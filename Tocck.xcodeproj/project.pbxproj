@@ -16,6 +16,7 @@
 		943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		943B4BEE1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A431A2C9EB500479EF5 /* myViewController3.swift */; };
+		946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A451A2CA52A00479EF5 /* myViewController4.swift */; };
 		9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472E68B1A1A1CCC00475D7B /* myViewController2.swift */; };
 		9472E6901A1A26BC00475D7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E68F1A1A26BC00475D7B /* MapKit.framework */; };
 		9472E6E81A23CAA900475D7B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */; };
@@ -58,6 +59,7 @@
 		943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		943B4BEF1A1A120800119EA2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		946A0A431A2C9EB500479EF5 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
+		946A0A451A2CA52A00479EF5 /* myViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController4.swift; sourceTree = "<group>"; };
 		9472E68B1A1A1CCC00475D7B /* myViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController2.swift; sourceTree = "<group>"; };
 		9472E68F1A1A26BC00475D7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -157,6 +159,7 @@
 				943B4BD41A1A105A00119EA2 /* LaunchScreen.xib */,
 				943B4BC91A1A105A00119EA2 /* Supporting Files */,
 				946A0A431A2C9EB500479EF5 /* myViewController3.swift */,
+				946A0A451A2CA52A00479EF5 /* myViewController4.swift */,
 			);
 			path = Tocck;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				943B4BCE1A1A105A00119EA2 /* ViewController.swift in Sources */,
 				9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */,
+				946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */,
 				946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */,
 				943B4BCC1A1A105A00119EA2 /* AppDelegate.swift in Sources */,
 			);
