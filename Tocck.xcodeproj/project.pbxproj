@@ -15,6 +15,7 @@
 		943B4BE21A1A105A00119EA2 /* TocckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4BE11A1A105A00119EA2 /* TocckTests.swift */; };
 		943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		943B4BEE1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
+		946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A431A2C9EB500479EF5 /* myViewController3.swift */; };
 		9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472E68B1A1A1CCC00475D7B /* myViewController2.swift */; };
 		9472E6901A1A26BC00475D7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E68F1A1A26BC00475D7B /* MapKit.framework */; };
 		9472E6E81A23CAA900475D7B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */; };
@@ -31,7 +32,6 @@
 		9472E6F71A23CACA00475D7B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F31A23CACA00475D7B /* Parse.framework */; };
 		9472E6F81A23CACA00475D7B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F41A23CACA00475D7B /* ParseFacebookUtils.framework */; };
 		9472E6F91A23CACA00475D7B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F51A23CACA00475D7B /* ParseUI.framework */; };
-		94BF33F31A2C29BE00CF7644 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF33F21A2C29BE00CF7644 /* myViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +57,7 @@
 		943B4BE11A1A105A00119EA2 /* TocckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TocckTests.swift; sourceTree = "<group>"; };
 		943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		943B4BEF1A1A120800119EA2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		946A0A431A2C9EB500479EF5 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
 		9472E68B1A1A1CCC00475D7B /* myViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController2.swift; sourceTree = "<group>"; };
 		9472E68F1A1A26BC00475D7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -73,7 +74,6 @@
 		9472E6F31A23CACA00475D7B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9472E6F41A23CACA00475D7B /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		9472E6F51A23CACA00475D7B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		94BF33F21A2C29BE00CF7644 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,13 +150,13 @@
 			children = (
 				943B4BCB1A1A105A00119EA2 /* AppDelegate.swift */,
 				943B4BCD1A1A105A00119EA2 /* ViewController.swift */,
-				94BF33F21A2C29BE00CF7644 /* myViewController3.swift */,
 				943B4BEF1A1A120800119EA2 /* Bridge-Header.h */,
 				943B4BCF1A1A105A00119EA2 /* Main.storyboard */,
 				9472E68B1A1A1CCC00475D7B /* myViewController2.swift */,
 				943B4BD21A1A105A00119EA2 /* Images.xcassets */,
 				943B4BD41A1A105A00119EA2 /* LaunchScreen.xib */,
 				943B4BC91A1A105A00119EA2 /* Supporting Files */,
+				946A0A431A2C9EB500479EF5 /* myViewController3.swift */,
 			);
 			path = Tocck;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			files = (
 				943B4BCE1A1A105A00119EA2 /* ViewController.swift in Sources */,
 				9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */,
-				94BF33F31A2C29BE00CF7644 /* myViewController3.swift in Sources */,
+				946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */,
 				943B4BCC1A1A105A00119EA2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" title="Who's around?" id="ziG-vx-Pkb" userLabel="Who's around?">
                         <barButtonItem key="rightBarButtonItem" title="Check" id="EnY-0W-gaX">
                             <connections>
-                                <segue destination="ShK-Wz-IeK" kind="push" id="G5Z-eh-rGL"/>
+                                <segue destination="T6b-pa-qPP" kind="push" id="z4l-NU-2GX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -81,37 +81,65 @@
             </objects>
             <point key="canvasLocation" x="970" y="-718"/>
         </scene>
-        <!--Find them!-->
-        <scene sceneID="asF-i8-ne1">
+        <!--Who's around?-->
+        <scene sceneID="TV9-nG-Vsk">
             <objects>
-                <viewController id="ShK-Wz-IeK" customClass="myViewController3" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hgB-34-yuZ">
+                <viewController id="T6b-pa-qPP" customClass="myViewController3" customModule="Tocck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8v4-rF-8as">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How far is far?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E0W-Bl-jwp">
-                                <rect key="frame" x="53" y="82" width="215" height="102"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How far is not far?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Roq-fU-E2E">
+                                <rect key="frame" x="89" y="121" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="vSd-DR-gKt">
-                                <rect key="frame" x="112" y="175" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="hjs-Px-rGc">
+                                <rect key="frame" x="114" y="158" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="numMiles:" destination="ShK-Wz-IeK" eventType="editingDidEnd" id="0tq-ez-d4l"/>
+                                    <action selector="numMiles:" destination="T6b-pa-qPP" eventType="editingDidEnd" id="QK6-xs-tdd"/>
                                 </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="miles" borderStyle="roundedRect" minimumFontSize="17" id="elI-3P-lIX">
+                                <rect key="frame" x="181" y="158" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Find them!" id="R5y-HT-exF"/>
+                    <navigationItem key="navigationItem" title="Who's around?" id="jj3-E7-qQS">
+                        <barButtonItem key="rightBarButtonItem" title="Find >" id="qVs-Ab-Wv8">
+                            <connections>
+                                <segue destination="daB-wV-hVt" kind="push" id="Afl-vb-ukz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="laf-jc-C3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cag-dL-1B8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1281" y="-766"/>
+            <point key="canvasLocation" x="1241" y="-942"/>
+        </scene>
+        <!--Make new friends-->
+        <scene sceneID="2no-QH-zN1">
+            <objects>
+                <viewController id="daB-wV-hVt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWo-lP-z52">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Make new friends" id="xab-Sj-Na9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDX-BO-xDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="-942"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jCG-Bo-Zft">
