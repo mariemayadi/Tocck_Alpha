@@ -123,9 +123,11 @@ class myViewController4: UIViewController {
         
         var testNumQueries = PFQuery(className:"moreUsers")
         //[testQueries whereKey:"age" notEqualTo:"17"]
+        testNumQueries.orderByAscending("miles")
         testNumQueries.whereKey("numAge", greaterThan:17)
         testNumQueries.whereKey("miles", lessThan:10)
-        testNumQueries.limit = 1; // limit to at most the specified num of results
+        testNumQueries.limit = 10; // limit to at most the specified num of results
+        // Sorts the results in ascending order by the score field
         testNumQueries.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
