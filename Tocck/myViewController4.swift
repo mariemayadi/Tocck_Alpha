@@ -101,6 +101,46 @@ class myViewController4: UIViewController {
             }
         }
         
+        // -- retrieve User with more specific requirments --
+        //NSPredicate *predicate = [NSPredicate predicateWithFormat:"playerName != 'Michael Yabuti'"];
+        //PFQuery *query = [PFQuery queryWithClassName:"GameScore" predicate:predicate];
+        
+        var testQueries = PFQuery(className:"moreUsers")
+        //[testQueries whereKey:"age" notEqualTo:"17"]
+        testQueries.whereKey("age", notEqualTo:"20")
+        testQueries.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("TestQueries retrieved \(objects.count) as user.")
+                // Do something with the found objects
+                for object in objects {
+                    NSLog("%@", object.objectId)
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
+        
+        var testNumQueries = PFQuery(className:"moreUsers")
+        //[testQueries whereKey:"age" notEqualTo:"17"]
+        testNumQueries.whereKey("numAge", greaterThan:17)
+        testNumQueries.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("testNumQueries retrieved \(objects.count) as user.")
+                // Do something with the found objects
+                for object in objects {
+                    NSLog("%@", object.objectId)
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
+        
         
 //        var queryNewInfo = PFQuery(className:"oneTestUser")
 //        queryNewInfo.getFirstObjectInBackgroundWithBlock {
