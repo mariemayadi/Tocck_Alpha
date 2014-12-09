@@ -125,6 +125,7 @@ class myViewController4: UIViewController {
         //[testQueries whereKey:"age" notEqualTo:"17"]
         testNumQueries.whereKey("numAge", greaterThan:17)
         testNumQueries.whereKey("miles", lessThan:10)
+        testNumQueries.limit = 1; // limit to at most the specified num of results
         testNumQueries.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
