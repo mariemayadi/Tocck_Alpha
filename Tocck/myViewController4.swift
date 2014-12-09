@@ -102,8 +102,6 @@ class myViewController4: UIViewController {
         }
         
         // -- retrieve User with more specific requirments --
-        //NSPredicate *predicate = [NSPredicate predicateWithFormat:"playerName != 'Michael Yabuti'"];
-        //PFQuery *query = [PFQuery queryWithClassName:"GameScore" predicate:predicate];
         
         var testQueries = PFQuery(className:"moreUsers")
         //[testQueries whereKey:"age" notEqualTo:"17"]
@@ -126,6 +124,7 @@ class myViewController4: UIViewController {
         var testNumQueries = PFQuery(className:"moreUsers")
         //[testQueries whereKey:"age" notEqualTo:"17"]
         testNumQueries.whereKey("numAge", greaterThan:17)
+        testNumQueries.whereKey("miles", greaterThan:6)
         testNumQueries.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
