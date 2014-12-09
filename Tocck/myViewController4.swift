@@ -124,7 +124,7 @@ class myViewController4: UIViewController {
         var testNumQueries = PFQuery(className:"moreUsers")
         //[testQueries whereKey:"age" notEqualTo:"17"]
         testNumQueries.whereKey("numAge", greaterThan:17)
-        testNumQueries.whereKey("miles", greaterThan:6)
+        testNumQueries.whereKey("miles", lessThan:10)
         testNumQueries.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {
