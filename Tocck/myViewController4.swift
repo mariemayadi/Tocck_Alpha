@@ -10,9 +10,10 @@ import UIKit
 
 class myViewController4: UIViewController {
 
-    var person = PFObject(className:"fiveSampleUsers")
+//    var person = PFObject(className:"fiveSampleUsers")
     var person2 = PFObject(className:"oneTestUser")
     var person3 = PFObject(className:"fiveSampleUsers")
+    
     
     //First Match.
     @IBOutlet weak var firstName1: UITextField!
@@ -39,12 +40,23 @@ class myViewController4: UIViewController {
         
         var firstQuery = PFQuery(className:"fiveSampleUsers")
         firstQuery.getFirstObjectInBackgroundWithBlock {
-            (object: PFObject!, error: NSError!) -> Void in
-            if object != nil {
-                self.person = object
-                self.firstName1.text = self.person["firstName"] as String
-                self.lastName1.text = self.person["lastName"] as String
-                self.age1.text = self.person["age"] as String
+            (person: PFObject!, error: NSError!) -> Void in
+            if person != nil {
+//                self.person = object
+                self.firstName1.text = person["firstName"] as String
+                self.lastName1.text = person["lastName"] as String
+                self.age1.text = person["age"] as String
+                
+                var imagePFFile = person["picture"] as PFFile
+                imagePFFile.getDataInBackgroundWithBlock {
+                    (imageData: NSData!, error: NSError!) -> Void in
+                    if error == nil {
+                        self.profilePic1.image = UIImage(data:imageData)
+                    }
+                }
+                
+                
+                
                 //self.profilePic1.image = self.person["picture"] as? UIImage
                 //self.profilePic1 = self.person["picture"] as PFFile
                 //let resumeData = applicantResume.getData()
@@ -187,7 +199,7 @@ class myViewController4: UIViewController {
 //            }
 //        }
         
-        person.ACL = PFACL(user: PFUser.currentUser())
+        //person.ACL = PFACL(user: PFUser.currentUser())
         
     }
 
