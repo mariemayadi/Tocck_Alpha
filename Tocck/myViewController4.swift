@@ -12,6 +12,7 @@ class myViewController4: UIViewController {
 
     var person = PFObject(className:"fiveSampleUsers")
     var person2 = PFObject(className:"oneTestUser")
+    var person3 = PFObject(className:"fiveSampleUsers")
     
     //First Match.
     @IBOutlet weak var firstName1: UITextField!
@@ -28,6 +29,8 @@ class myViewController4: UIViewController {
     @IBOutlet weak var profilePic2: UIImageView!
     
     
+    @IBOutlet weak var testPicture: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,10 +46,36 @@ class myViewController4: UIViewController {
                 self.lastName1.text = self.person["lastName"] as String
                 self.age1.text = self.person["age"] as String
                 //self.profilePic1.image = self.person["picture"] as? UIImage
-                //self.profilePic1.image =
+                //self.profilePic1 = self.person["picture"] as PFFile
+                //let resumeData = applicantResume.getData()
             } else {
             }
         }
+        /////
+        
+//        let imageData = UIImagePNGRepresentation(super_testUser_facebook)
+//        let imageFile = PFFile(name:"image.png", data:imageData)
+//        
+//        var userPhoto = PFObject(className:"UserPhoto")
+//        userPhoto["imageName"] = "My trip to Hawaii!"
+//        userPhoto["imageFile"] = imageFile
+//        userPhoto.saveInBackground()
+//        
+//        var userPhoto = PFObject(className:"fiveSampleUsers")
+//        //userPhoto["imageName"] = "My trip to Hawaii!"
+//        //userPhoto["imageFile"] = imageFile
+//        //userPhoto.saveInBackground()
+//        
+//        let userImageFile = userPhoto["picture"] as PFFile
+//        userImageFile.getDataInBackgroundWithBlock {
+//            (imageData: NSData!, error: NSError!) -> Void in
+//            if error == nil {
+//                let image = UIImage(data:imageData)
+//            }
+//        }
+
+
+        /////
         
         var secondQuery = PFQuery(className:"fiveSampleUsers")
         secondQuery.getObjectInBackgroundWithId("9VwDICrSSy") {

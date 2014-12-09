@@ -35,6 +35,7 @@
 		9472E6F71A23CACA00475D7B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F31A23CACA00475D7B /* Parse.framework */; };
 		9472E6F81A23CACA00475D7B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F41A23CACA00475D7B /* ParseFacebookUtils.framework */; };
 		9472E6F91A23CACA00475D7B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F51A23CACA00475D7B /* ParseUI.framework */; };
+		94A7EA371A36D60D00364A94 /* super_testUser_facebook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94A7EA361A36D60D00364A94 /* super_testUser_facebook.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		9472E6F31A23CACA00475D7B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9472E6F41A23CACA00475D7B /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		9472E6F51A23CACA00475D7B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		94A7EA361A36D60D00364A94 /* super_testUser_facebook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = super_testUser_facebook.jpg; path = ../../../profile_user_images/super_testUser_facebook.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		943B4BC81A1A105A00119EA2 /* Tocck */ = {
 			isa = PBXGroup;
 			children = (
+				94A7EA361A36D60D00364A94 /* super_testUser_facebook.jpg */,
 				946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */,
 				946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */,
 				943B4BCB1A1A105A00119EA2 /* AppDelegate.swift */,
@@ -279,6 +282,7 @@
 				946A0A4C1A2CF11700479EF5 /* female_facebook_profile_picture.jpg in Resources */,
 				943B4BD61A1A105A00119EA2 /* LaunchScreen.xib in Resources */,
 				943B4BD31A1A105A00119EA2 /* Images.xcassets in Resources */,
+				94A7EA371A36D60D00364A94 /* super_testUser_facebook.jpg in Resources */,
 				946A0A481A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
