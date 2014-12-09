@@ -64,6 +64,24 @@ class myViewController4: UIViewController {
             }
         }
         
+        //WORKING with queries:
+        var testQuery = PFQuery(className:"fiveSampleUsers")
+        testQuery.whereKey("firstName", equalTo:"Brian")
+        testQuery.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("Successfully retrieved \(objects.count) as user.")
+                // Do something with the found objects
+                for object in objects {
+                    NSLog("%@", object.objectId)
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
+        
         
 //        var queryNewInfo = PFQuery(className:"oneTestUser")
 //        queryNewInfo.getFirstObjectInBackgroundWithBlock {
