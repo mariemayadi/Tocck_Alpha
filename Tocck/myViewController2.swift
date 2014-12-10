@@ -67,8 +67,8 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
         println(latitude)
         
         buildingAnnotation.coordinate = buildingLocation
-        buildingAnnotation.title = "Building"
-        buildingAnnotation.subtitle = "What about it"
+        buildingAnnotation.title = "Hello"
+        buildingAnnotation.subtitle = "Who is around?"
         
         self.mapView.addAnnotation(buildingAnnotation)
     }
