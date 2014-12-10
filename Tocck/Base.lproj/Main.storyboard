@@ -12,8 +12,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TOCCK.png" id="Vr5-ji-kf6">
+                                <rect key="frame" x="36" y="127" width="248" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="HGO-Et-BW5" customClass="FBLoginView">
-                                <rect key="frame" x="49" y="279" width="223" height="91"/>
+                                <rect key="frame" x="49" y="296" width="223" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -240,6 +244,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TOCCK.png" width="2406" height="494"/>
         <image name="facebook-default-no-profile-pic.jpg" width="1290" height="1290"/>
         <image name="female_facebook_profile_picture.jpg" width="250" height="250"/>
     </resources>

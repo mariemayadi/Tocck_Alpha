@@ -10,8 +10,8 @@ import UIKit
 
 class myViewController4: UIViewController {
     
-    var queriedUsersID: [String] = ["3s8PPrUeU9"]
-    //var queriedUsersID: [String] = []
+    //var queriedUsersID: [String] = ["3s8PPrUeU9"]
+    var queriedUsersID: [String] = []
 
     
     //First Match.
@@ -40,7 +40,7 @@ class myViewController4: UIViewController {
         
         var requestedQuery = PFQuery(className:"fiveSampleUsers")
         requestedQuery.orderByAscending("miles")
-        requestedQuery.whereKey("ageDigit", greaterThan:40)
+        requestedQuery.whereKey("ageDigit", greaterThan:21)
         requestedQuery.whereKey("milesDigit", lessThan:15)
         requestedQuery.limit = 3; // limit to at most the specified num of results
         // Sorts the results in ascending order by the score field
@@ -67,6 +67,7 @@ class myViewController4: UIViewController {
             }
             
             //--------------------------------------------------
+            //      USER 1
             //--------------------------------------------------
             
             var defaultQuery = PFQuery(className:"fiveSampleUsers")
@@ -92,6 +93,7 @@ class myViewController4: UIViewController {
             }
             
             //--------------------------------------------------
+            //      USER 2
             //--------------------------------------------------
             
             if (self.queriedUsersID.count > 1){
@@ -119,14 +121,6 @@ class myViewController4: UIViewController {
             //--------------------------------------------------
             
         }
-        
-        //--------------------------------------------
-        for (index, queriedUser) in enumerate(self.queriedUsersID) {
-            println("OUTSIDE! User \(index + 1): \(queriedUser)")
-        }
-        //--------------------------------------------
-
-
         
     }
 
