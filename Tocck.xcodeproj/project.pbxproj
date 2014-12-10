@@ -16,6 +16,7 @@
 		943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		943B4BEE1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		946414A81A3802BB00B0B92B /* TOCCK.png in Resources */ = {isa = PBXBuildFile; fileRef = 946414A71A3802BA00B0B92B /* TOCCK.png */; };
+		946414AA1A38087C00B0B92B /* miles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946414A91A38087C00B0B92B /* miles.jpg */; };
 		946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A431A2C9EB500479EF5 /* myViewController3.swift */; };
 		946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A451A2CA52A00479EF5 /* myViewController4.swift */; };
 		946A0A481A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */; };
@@ -63,6 +64,7 @@
 		943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		943B4BEF1A1A120800119EA2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		946414A71A3802BA00B0B92B /* TOCCK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TOCCK.png; path = ../../../../TOCCK.png; sourceTree = "<group>"; };
+		946414A91A38087C00B0B92B /* miles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = miles.jpg; path = ../../../UI_Images/miles.jpg; sourceTree = "<group>"; };
 		946A0A431A2C9EB500479EF5 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
 		946A0A451A2CA52A00479EF5 /* myViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController4.swift; sourceTree = "<group>"; };
 		946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "facebook-default-no-profile-pic.jpg"; path = "../../../profile_user_images/facebook-default-no-profile-pic.jpg"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		943B4BC81A1A105A00119EA2 /* Tocck */ = {
 			isa = PBXGroup;
 			children = (
+				946414A91A38087C00B0B92B /* miles.jpg */,
 				946414A71A3802BA00B0B92B /* TOCCK.png */,
 				94A7EA361A36D60D00364A94 /* super_testUser_facebook.jpg */,
 				946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */,
@@ -283,6 +286,7 @@
 			files = (
 				943B4BD11A1A105A00119EA2 /* Main.storyboard in Resources */,
 				946A0A4C1A2CF11700479EF5 /* female_facebook_profile_picture.jpg in Resources */,
+				946414AA1A38087C00B0B92B /* miles.jpg in Resources */,
 				943B4BD61A1A105A00119EA2 /* LaunchScreen.xib in Resources */,
 				946414A81A3802BB00B0B92B /* TOCCK.png in Resources */,
 				943B4BD31A1A105A00119EA2 /* Images.xcassets in Resources */,
