@@ -67,7 +67,7 @@ class myViewController4: UIViewController {
             }
             //--------------------------------------------------
             var defaultQuery = PFQuery(className:"fiveSampleUsers")
-            defaultQuery.getObjectInBackgroundWithId(self.queriedUsersID[0]) {
+            defaultQuery.getObjectInBackgroundWithId(self.queriedUsersID[1]) {
                 (person: PFObject!, error: NSError!) -> Void in
                 if error == nil {
                     NSLog("%@", person)
