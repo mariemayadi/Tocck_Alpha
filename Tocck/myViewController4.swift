@@ -9,6 +9,8 @@
 import UIKit
 
 class myViewController4: UIViewController {
+    
+    var queriedUsersID: [String] = ["3s8PPrUeU9"]
 
 //    var person = PFObject(className:"fiveSampleUsers")
     var person2 = PFObject(className:"oneTestUser")
@@ -33,6 +35,35 @@ class myViewController4: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //--------------------------------------------
+        
+        var defaultQuery = PFQuery(className:"fiveSampleUsers")
+        defaultQuery.getObjectInBackgroundWithId("3s8PPrUeU9") {
+            (person: PFObject!, error: NSError!) -> Void in
+            if error == nil {
+                NSLog("%@", person)
+                self.firstName1.text = person["firstName"] as String
+                self.lastName1.text = person["lastName"] as String
+                self.age1.text = person["age"] as String
+                
+                var imagePFFile = person["picture"] as PFFile
+                imagePFFile.getDataInBackgroundWithBlock {
+                    (imageData: NSData!, error: NSError!) -> Void in
+                    if error == nil {
+                        self.profilePic2.image = UIImage(data:imageData)
+                    }
+                }
+                
+            } else {
+                NSLog("%@", error)
+            }
+        }
+        
+        
+        //----------------------------------------------
+        
 
         // Do any additional setup after loading the view.
 
@@ -42,9 +73,9 @@ class myViewController4: UIViewController {
             (person: PFObject!, error: NSError!) -> Void in
             if person != nil {
 //                self.person = object
-                self.firstName1.text = person["firstName"] as String
-                self.lastName1.text = person["lastName"] as String
-                self.age1.text = person["age"] as String
+                self.firstName2.text = person["firstName"] as String
+                self.lastName2.text = person["lastName"] as String
+                self.age2.text = person["age"] as String
                 
                 var imagePFFile = person["picture"] as PFFile
                 imagePFFile.getDataInBackgroundWithBlock {
@@ -54,65 +85,39 @@ class myViewController4: UIViewController {
                     }
                 }
                 
-                
-                
-                //self.profilePic1.image = self.person["picture"] as? UIImage
-                //self.profilePic1 = self.person["picture"] as PFFile
-                //let resumeData = applicantResume.getData()
             } else {
             }
         }
         /////
         
-//        let imageData = UIImagePNGRepresentation(super_testUser_facebook)
-//        let imageFile = PFFile(name:"image.png", data:imageData)
-//        
-//        var userPhoto = PFObject(className:"UserPhoto")
-//        userPhoto["imageName"] = "My trip to Hawaii!"
-//        userPhoto["imageFile"] = imageFile
-//        userPhoto.saveInBackground()
-//        
-//        var userPhoto = PFObject(className:"fiveSampleUsers")
-//        //userPhoto["imageName"] = "My trip to Hawaii!"
-//        //userPhoto["imageFile"] = imageFile
-//        //userPhoto.saveInBackground()
-//        
-//        let userImageFile = userPhoto["picture"] as PFFile
-//        userImageFile.getDataInBackgroundWithBlock {
-//            (imageData: NSData!, error: NSError!) -> Void in
+
+//        var thirdQuery = PFQuery(className:"moreUsers")
+//        thirdQuery.orderByAscending("miles")
+//        thirdQuery.whereKey("numAge", greaterThan:21)
+//        thirdQuery.whereKey("miles", lessThan:5)
+//        thirdQuery.limit = 1; // limit to at most the specified num of results
+//        // Sorts the results in ascending order by the score field
+//        thirdQuery.findObjectsInBackgroundWithBlock {
+//            (users: [AnyObject]!, error: NSError!) -> Void in
 //            if error == nil {
-//                let image = UIImage(data:imageData)
+//                // The find succeeded.
+//                NSLog("testNumQueries retrieved \(users.count) as user.")
+//                // Do something with the found objects
+//                for user in users {
+//                    NSLog("%@", user.objectId)
+        
+                    
+        
+  
+//                }
+//            } else {
+//                // Log details of the failure
+//                NSLog("Error: %@ %@", error, error.userInfo!)
 //            }
 //        }
 
-
         /////
-        
-        var secondQuery = PFQuery(className:"fiveSampleUsers")
-        secondQuery.getObjectInBackgroundWithId("9VwDICrSSy") {
-            (person: PFObject!, error: NSError!) -> Void in
-            if error == nil {
-                NSLog("%@", person)
-                //self.person2 = person
-                self.firstName2.text = person["firstName"] as String
-                self.lastName2.text = person["lastName"] as String
-                self.age2.text = person["age"] as String
-                //self.profilePic1.image = self.person["picture"] as? UIImage
-                //self.profilePic1.image =
-                
-                
-                var imagePFFile = person["picture"] as PFFile
-                imagePFFile.getDataInBackgroundWithBlock {
-                    (imageData: NSData!, error: NSError!) -> Void in
-                    if error == nil {
-                        self.profilePic2.image = UIImage(data:imageData)
-                    }
-                }
 
-            } else {
-                NSLog("%@", error)
-            }
-        }
         
         //WORKING with queries:
             // -- retrieve User with specified first name --
