@@ -40,7 +40,7 @@ class myViewController4: UIViewController {
         
         var requestedQuery = PFQuery(className:"fiveSampleUsers")
         requestedQuery.orderByAscending("miles")
-        requestedQuery.whereKey("ageDigit", greaterThan:21)
+        requestedQuery.whereKey("ageDigit", greaterThan:40)
         requestedQuery.whereKey("milesDigit", lessThan:15)
         requestedQuery.limit = 3; // limit to at most the specified num of results
         // Sorts the results in ascending order by the score field
@@ -94,23 +94,24 @@ class myViewController4: UIViewController {
             //--------------------------------------------------
             //--------------------------------------------------
             
-            var secondQuery = PFQuery(className:"fiveSampleUsers")
-            secondQuery.getObjectInBackgroundWithId(self.queriedUsersID[1]) {
-                (person: PFObject!, error: NSError!) -> Void in
-                if person != nil {
-                    self.firstName2.text = person["firstName"] as String
-                    self.lastName2.text = person["lastName"] as String
-                    self.age2.text = person["age"] as String
+            if (self.queriedUsersID.count > 1){
+                var secondQuery = PFQuery(className:"fiveSampleUsers")
+                secondQuery.getObjectInBackgroundWithId(self.queriedUsersID[1]) {
+                    (person: PFObject!, error: NSError!) -> Void in
+                    if person != nil {
+                        self.firstName2.text = person["firstName"] as String
+                        self.lastName2.text = person["lastName"] as String
+                        self.age2.text = person["age"] as String
                     
-                    var imagePFFile = person["picture"] as PFFile
-                    imagePFFile.getDataInBackgroundWithBlock {
-                        (imageData: NSData!, error: NSError!) -> Void in
-                        if error == nil {
-                            self.profilePic2.image = UIImage(data:imageData)
+                        var imagePFFile = person["picture"] as PFFile
+                        imagePFFile.getDataInBackgroundWithBlock {
+                            (imageData: NSData!, error: NSError!) -> Void in
+                            if error == nil {
+                                self.profilePic2.image = UIImage(data:imageData)
+                            }
                         }
+                    } else {
                     }
-                    
-                } else {
                 }
             }
             
