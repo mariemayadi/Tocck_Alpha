@@ -91,15 +91,25 @@ class myViewController4: UIViewController {
         
         var secondQuery = PFQuery(className:"fiveSampleUsers")
         secondQuery.getObjectInBackgroundWithId("9VwDICrSSy") {
-            (object: PFObject!, error: NSError!) -> Void in
+            (person: PFObject!, error: NSError!) -> Void in
             if error == nil {
-                NSLog("%@", object)
-                self.person2 = object
-                self.firstName2.text = self.person2["firstName"] as String
-                self.lastName2.text = self.person2["lastName"] as String
-                self.age2.text = self.person2["age"] as String
+                NSLog("%@", person)
+                //self.person2 = person
+                self.firstName2.text = person["firstName"] as String
+                self.lastName2.text = person["lastName"] as String
+                self.age2.text = person["age"] as String
                 //self.profilePic1.image = self.person["picture"] as? UIImage
                 //self.profilePic1.image =
+                
+                
+                var imagePFFile = person["picture"] as PFFile
+                imagePFFile.getDataInBackgroundWithBlock {
+                    (imageData: NSData!, error: NSError!) -> Void in
+                    if error == nil {
+                        self.profilePic2.image = UIImage(data:imageData)
+                    }
+                }
+
             } else {
                 NSLog("%@", error)
             }
