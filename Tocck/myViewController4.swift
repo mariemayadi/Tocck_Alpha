@@ -14,7 +14,6 @@ class myViewController4: UIViewController {
     var person2 = PFObject(className:"oneTestUser")
     var person3 = PFObject(className:"fiveSampleUsers")
     
-    
     //First Match.
     @IBOutlet weak var firstName1: UITextField!
     @IBOutlet weak var lastName1: UITextField!
