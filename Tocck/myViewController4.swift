@@ -65,6 +65,29 @@ class myViewController4: UIViewController {
             for (index, queriedUser) in enumerate(self.queriedUsersID) {
                 println("INSIDE! User \(index + 1): \(queriedUser)")
             }
+            //--------------------------------------------------
+            var defaultQuery = PFQuery(className:"fiveSampleUsers")
+            defaultQuery.getObjectInBackgroundWithId(self.queriedUsersID[0]) {
+                (person: PFObject!, error: NSError!) -> Void in
+                if error == nil {
+                    NSLog("%@", person)
+                    self.firstName1.text = person["firstName"] as String
+                    self.lastName1.text = person["lastName"] as String
+                    self.age1.text = person["age"] as String
+                    
+                    var imagePFFile = person["picture"] as PFFile
+                    imagePFFile.getDataInBackgroundWithBlock {
+                        (imageData: NSData!, error: NSError!) -> Void in
+                        if error == nil {
+                            self.profilePic1.image = UIImage(data:imageData)
+                        }
+                    }
+                    
+                } else {
+                    NSLog("%@", error)
+                }
+            }
+            //--------------------------------------------------
             
         }
         
@@ -74,27 +97,27 @@ class myViewController4: UIViewController {
         }
         //--------------------------------------------
         
-        var defaultQuery = PFQuery(className:"fiveSampleUsers")
-        defaultQuery.getObjectInBackgroundWithId(self.queriedUsersID[0]) {
-            (person: PFObject!, error: NSError!) -> Void in
-            if error == nil {
-                NSLog("%@", person)
-                self.firstName1.text = person["firstName"] as String
-                self.lastName1.text = person["lastName"] as String
-                self.age1.text = person["age"] as String
-                
-                var imagePFFile = person["picture"] as PFFile
-                imagePFFile.getDataInBackgroundWithBlock {
-                    (imageData: NSData!, error: NSError!) -> Void in
-                    if error == nil {
-                        self.profilePic1.image = UIImage(data:imageData)
-                    }
-                }
-                
-            } else {
-                NSLog("%@", error)
-            }
-        }
+//        var defaultQuery = PFQuery(className:"fiveSampleUsers")
+//        defaultQuery.getObjectInBackgroundWithId(self.queriedUsersID[0]) {
+//            (person: PFObject!, error: NSError!) -> Void in
+//            if error == nil {
+//                NSLog("%@", person)
+//                self.firstName1.text = person["firstName"] as String
+//                self.lastName1.text = person["lastName"] as String
+//                self.age1.text = person["age"] as String
+//                
+//                var imagePFFile = person["picture"] as PFFile
+//                imagePFFile.getDataInBackgroundWithBlock {
+//                    (imageData: NSData!, error: NSError!) -> Void in
+//                    if error == nil {
+//                        self.profilePic1.image = UIImage(data:imageData)
+//                    }
+//                }
+//                
+//            } else {
+//                NSLog("%@", error)
+//            }
+//        }
 
         
         //------------------------------------------------
