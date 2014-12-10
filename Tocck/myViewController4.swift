@@ -13,6 +13,7 @@ class myViewController4: UIViewController {
     //var queriedUsersID: [String] = ["3s8PPrUeU9"]
     var queriedUsersID: [String] = []
 
+    @IBOutlet weak var distMilesRequested: UITextField!
     
     //First Match.
     @IBOutlet weak var firstName1: UITextField!
@@ -37,6 +38,31 @@ class myViewController4: UIViewController {
         
         //----------------------------------------------
         
+        var milesEntered = PFQuery(className:"Miles")
+        milesEntered.orderByDescending("createdAt")
+        milesEntered.limit = 1
+        
+        milesEntered.findObjectsInBackgroundWithBlock {
+            (distances: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("MileQueries retrieved \(distances.count) as user.")
+                // Do something with the found objects
+                for lastRequest in distances {
+                    println("Getting mile ID")
+                    NSLog("%@", lastRequest.objectId)
+                    print("MILES:")
+                    println(lastRequest["numMiles"] as String)
+                    self.distMilesRequested.text = lastRequest["numMiles"] as String
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
+        
+        
+        //----------------------------------------------
         
         var requestedQuery = PFQuery(className:"fiveSampleUsers")
         requestedQuery.orderByAscending("miles")
