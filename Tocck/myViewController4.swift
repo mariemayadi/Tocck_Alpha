@@ -155,5 +155,33 @@ class myViewController4: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //This button takes us to the view controller that locates the user (GPS - lat/long - map)
+    @IBAction func toMapPressed(sender: UIButton) {
+        
+        let myMap = self.storyboard?.instantiateViewControllerWithIdentifier("myMap") as newMapViewController
+        self.navigationController?.pushViewController(myMap, animated: true)
+    }
+    
+    //This temporary Button takes you to the common chat room
+    @IBAction func toChatRoomPressed(sender: UIButton) {
+        
+        let theChatRoom = self.storyboard?.instantiateViewControllerWithIdentifier("theChatRoom") as chatRoomViewController
+        
+        self.navigationController?.pushViewController(theChatRoom, animated: true)
+        
+    }
+    
+    //Chatting with contact 1
+    @IBAction func chatWithMatch1(sender: UIButton) {
+        let theChatRoom = self.storyboard?.instantiateViewControllerWithIdentifier("theChatRoom") as chatRoomViewController
+        self.navigationController?.pushViewController(theChatRoom, animated: true)
+        
+    }
+    
+    @IBAction func chatWithMatch2(sender: UIButton) {
+        let theChatRoom = self.storyboard?.instantiateViewControllerWithIdentifier("theChatRoom") as chatRoomViewController
+        self.navigationController?.pushViewController(theChatRoom, animated: true)
+    }
+    
+    
 }
