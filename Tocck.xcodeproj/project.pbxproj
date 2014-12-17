@@ -39,6 +39,7 @@
 		9472E6F91A23CACA00475D7B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6F51A23CACA00475D7B /* ParseUI.framework */; };
 		948875621A412E7A007EFCAE /* TOCCK.png in Resources */ = {isa = PBXBuildFile; fileRef = 948875611A412E7A007EFCAE /* TOCCK.png */; };
 		94A7EA371A36D60D00364A94 /* super_testUser_facebook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94A7EA361A36D60D00364A94 /* super_testUser_facebook.jpg */; };
+		94C3910A1A41E0130090C7AE /* convertLatLongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C391091A41E0130090C7AE /* convertLatLongViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		9472E6F51A23CACA00475D7B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		948875611A412E7A007EFCAE /* TOCCK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TOCCK.png; path = ../../../UI_Images/TOCCK.png; sourceTree = "<group>"; };
 		94A7EA361A36D60D00364A94 /* super_testUser_facebook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = super_testUser_facebook.jpg; path = ../../../profile_user_images/super_testUser_facebook.jpg; sourceTree = "<group>"; };
+		94C391091A41E0130090C7AE /* convertLatLongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convertLatLongViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				946A0A451A2CA52A00479EF5 /* myViewController4.swift */,
 				943D2BFA1A413ABC00516341 /* chatRoomViewController.swift */,
 				9468DF281A41749800F72122 /* currentLocationViewController.swift */,
+				94C391091A41E0130090C7AE /* convertLatLongViewController.swift */,
 			);
 			path = Tocck;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				9468DF291A41749800F72122 /* currentLocationViewController.swift in Sources */,
 				946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */,
 				946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */,
+				94C3910A1A41E0130090C7AE /* convertLatLongViewController.swift in Sources */,
 				943B4BCC1A1A105A00119EA2 /* AppDelegate.swift in Sources */,
 				943D2BFB1A413ABC00516341 /* chatRoomViewController.swift in Sources */,
 			);

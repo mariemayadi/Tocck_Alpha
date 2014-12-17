@@ -125,6 +125,7 @@ class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         self.locationManager.startUpdatingLocation()
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -171,5 +172,18 @@ class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
     }
     
     //----------------------------------------------------
+    
+//    //Chatting with contact 1
+//    @IBAction func chatWithMatch1(sender: UIButton) {
+//        let theChatRoom = self.storyboard?.instantiateViewControllerWithIdentifier("theChatRoom") as chatRoomViewController
+//        self.navigationController?.pushViewController(theChatRoom, animated: true)
+//        
+//    }
+    
+    //Leads to the conversion center -late/long to miles table update-
+    @IBAction func dataCenterPressed(sender: UIButton) {
+        let convertLatLong = self.storyboard?.instantiateViewControllerWithIdentifier("convertLatLong") as convertLatLongViewController
+        self.navigationController?.pushViewController(convertLatLong, animated: true)
+    }
 
 }
