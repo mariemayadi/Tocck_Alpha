@@ -10,6 +10,7 @@ import UIKit
 
 class convertLatLongViewController: UIViewController {
     
+    var queriedMatches: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,39 @@ class convertLatLongViewController: UIViewController {
         }
         
         //----------------------------------------------
+        
+        
+        //----------------------------------------------
+        
+        var matchesQuery = PFQuery(className:"farClose2Users")
+        //requestedQuery.orderByAscending("miles")
+        //requestedQuery.whereKey("ageDigit", greaterThan:21)
+        //requestedQuery.whereKey("milesDigit", lessThan:15)
+        //requestedQuery.limit = 3; // limit to at most the specified num of results
+        // Sorts the results in ascending order by the score field
+        matchesQuery.findObjectsInBackgroundWithBlock {
+            (users: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                NSLog("matches Queries retrieved \(users.count) as user.")
+                // Do something with the found objects
+                for user in users {
+                    NSLog("%@", user.objectId)
+                    self.queriedMatches.append(user.objectId)
+                }
+                for (index, queriedUser) in enumerate(self.queriedMatches) {
+                    println("User \(index + 1): \(queriedUser)")
+                }
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+            for (index, queriedUser) in enumerate(self.queriedMatches) {
+                println("INSIDE! User \(index + 1): \(queriedUser)")
+            }
+        }
+        
+            //--------------------------------------------------
         
     }
 
