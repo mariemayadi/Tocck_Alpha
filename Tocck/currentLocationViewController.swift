@@ -13,6 +13,9 @@ import Social
 
 class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
+    var parseLat = PFObject(className:"latData")
+    var parseLong = PFObject(className:"longData")
+    
     //NOTE:
     //The CLLocationManagerDelegate protocol defines the methods used to receive location and heading updates from a CLLocationManager object.
     
@@ -43,6 +46,19 @@ class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         longitude = manager.location.coordinate.longitude
         latitude = manager.location.coordinate.latitude
         
+        //----------------------------------------------------
+        // Saves current lat/long to Parse
+        //----------------------------------------------------
+        
+        parseLat["currentLat"] = manager.location.coordinate.latitude
+        saveLat()
+        
+        parseLong["currentLong"] = manager.location.coordinate.longitude
+        saveLong()
+        
+        //----------------------------------------------------
+        
+        
         //Structure containing a geographical coordinate
         var buildingLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         
@@ -72,6 +88,8 @@ class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
         println("inside viewDidLoad: Default Lat/Long")
         println(longitude)
         println(latitude)
+        
+        
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -127,5 +145,31 @@ class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLoca
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
+    
+    //----------------------------------------------------
+    
+    //Saving the Latitude
+    func saveLat(){
+        parseLat.saveInBackgroundWithBlock { (success, error) -> Void in
+            if(success) {
+                NSLog("all done")
+            } else {
+                // handle error
+            }
+        }
+    }
+    
+    //Saving the Latitude
+    func saveLong(){
+        parseLong.saveInBackgroundWithBlock { (success, error) -> Void in
+            if(success) {
+                NSLog("all done")
+            } else {
+                // handle error
+            }
+        }
+    }
+    
+    //----------------------------------------------------
 
 }
