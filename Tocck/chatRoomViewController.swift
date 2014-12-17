@@ -8,8 +8,10 @@
 
 import UIKit
 
-class chatRoomViewController: UIViewController {
+class chatRoomViewController: UIViewController, UIPickerViewDelegate {
 
+    var purpose = ["New in Town","Week-end trip","Longer road trip","Just hang out"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,5 +23,19 @@ class chatRoomViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // returns the number of 'columns' to display.
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
+        return 1
+    }
+    
+    // returns the # of rows in each component..
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+        return purpose.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        
+        return purpose[row]
+    }
 
 }
