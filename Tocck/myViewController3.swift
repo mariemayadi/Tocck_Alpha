@@ -39,4 +39,8 @@ class myViewController3: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func matchMePressed(sender: UIButton) {
+        let myMatches = self.storyboard?.instantiateViewControllerWithIdentifier("myMatches") as myViewController4
+        self.navigationController?.pushViewController(myMatches, animated: true)
+    }
 }

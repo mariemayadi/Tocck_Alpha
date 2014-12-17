@@ -156,20 +156,8 @@ class myViewController4: UIViewController {
     }
 
     //This button takes us to the view controller that locates the user (GPS - lat/long - map)
-    @IBAction func toMapPressed(sender: UIButton) {
-        
-        let myMap = self.storyboard?.instantiateViewControllerWithIdentifier("myMap") as newMapViewController
-        self.navigationController?.pushViewController(myMap, animated: true)
-    }
-    
-    //This temporary Button takes you to the common chat room
-    @IBAction func toChatRoomPressed(sender: UIButton) {
-        
-        let theChatRoom = self.storyboard?.instantiateViewControllerWithIdentifier("theChatRoom") as chatRoomViewController
-        
-        self.navigationController?.pushViewController(theChatRoom, animated: true)
-        
-    }
+    //TBI
+
     
     //Chatting with contact 1
     @IBAction func chatWithMatch1(sender: UIButton) {
@@ -183,5 +171,9 @@ class myViewController4: UIViewController {
         self.navigationController?.pushViewController(theChatRoom, animated: true)
     }
     
+    @IBAction func changeRadiusPressed(sender: UIButton) {
+        let numMiles = self.storyboard?.instantiateViewControllerWithIdentifier("numMiles") as myViewController3
+        self.navigationController?.pushViewController(numMiles, animated: true)
+    }
     
 }

@@ -1,35 +1,18 @@
 //
-//  myViewController2.swift
+//  currentLocationViewController.swift
 //  Tocck
 //
-//  Created by Mariem Ayadi on 11/17/14.
+//  Created by Mariem Ayadi on 12/17/14.
 //  Copyright (c) 2014 Mariem Ayadi. All rights reserved.
 //
 
 import UIKit
+import MapKit
 import CoreLocation
 import Social
-import MapKit
 
-class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class currentLocationViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
-    @IBAction func tellThem(sender: AnyObject) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            facebookSheet.setInitialText("I am using Tocck in a new location")
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-            
-        } else {
-            
-            var alert = UIAlertController(title: "Accounts", message: "Please log in to Facebook to share", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-        
-    }
-    
-    @IBOutlet weak var mapView: MKMapView!
     //NOTE:
     //The CLLocationManagerDelegate protocol defines the methods used to receive location and heading updates from a CLLocationManager object.
     
@@ -41,8 +24,14 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
     var longitude :CLLocationDegrees = -72.637915
     
     //A structure that defines the area spanned by a map region.
-    let span:MKCoordinateSpan = MKCoordinateSpanMake(0.075, 0.075)
+    let span:MKCoordinateSpan = MKCoordinateSpanMake(0.001, 0.001)
     var buildingAnnotation = MKPointAnnotation()
+    
+    //NOTE:
+    //The CLLocationManager class is the central point for configuring the delivery of location- and heading-related events to your app. You use an instance of this class to establish the parameters that determine when location and heading events should be delivered and to start and stop the actual delivery of those events. You can also use a location manager object to retrieve the most recent location and heading data.
+
+
+    @IBOutlet weak var mapView: MKMapView!
     
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -67,18 +56,20 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
         println(latitude)
         
         buildingAnnotation.coordinate = buildingLocation
-        buildingAnnotation.title = "Hello"
-        buildingAnnotation.subtitle = "Who is around?"
+        buildingAnnotation.title = "Building"
+        buildingAnnotation.subtitle = "What about it"
         
         self.mapView.addAnnotation(buildingAnnotation)
     }
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // A Map kit needs to have certain values
         
-        println("inside viewDidLoad")
+        println("inside viewDidLoad: Default Lat/Long")
         println(longitude)
         println(latitude)
         
@@ -116,9 +107,25 @@ class myViewController2: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.startUpdatingLocation()
         
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    @IBAction func tellThem(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            facebookSheet.setInitialText("I am using Tocck in a new location")
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+            
+        } else {
+            
+            var alert = UIAlertController(title: "Accounts", message: "Please log in to Facebook to share", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+
 }

@@ -15,14 +15,13 @@
 		943B4BE21A1A105A00119EA2 /* TocckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943B4BE11A1A105A00119EA2 /* TocckTests.swift */; };
 		943B4BED1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
 		943B4BEE1A1A111D00119EA2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */; };
-		943D2BF91A41313500516341 /* newMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D2BF81A41313500516341 /* newMapViewController.swift */; };
 		943D2BFB1A413ABC00516341 /* chatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D2BFA1A413ABC00516341 /* chatRoomViewController.swift */; };
 		946414AA1A38087C00B0B92B /* miles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946414A91A38087C00B0B92B /* miles.jpg */; };
+		9468DF291A41749800F72122 /* currentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9468DF281A41749800F72122 /* currentLocationViewController.swift */; };
 		946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A431A2C9EB500479EF5 /* myViewController3.swift */; };
 		946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946A0A451A2CA52A00479EF5 /* myViewController4.swift */; };
 		946A0A481A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */; };
 		946A0A4C1A2CF11700479EF5 /* female_facebook_profile_picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */; };
-		9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9472E68B1A1A1CCC00475D7B /* myViewController2.swift */; };
 		9472E6901A1A26BC00475D7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E68F1A1A26BC00475D7B /* MapKit.framework */; };
 		9472E6E81A23CAA900475D7B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */; };
 		9472E6E91A23CAA900475D7B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9472E6DF1A23CAA900475D7B /* CFNetwork.framework */; };
@@ -65,14 +64,13 @@
 		943B4BE11A1A105A00119EA2 /* TocckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TocckTests.swift; sourceTree = "<group>"; };
 		943B4BEC1A1A111D00119EA2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		943B4BEF1A1A120800119EA2 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
-		943D2BF81A41313500516341 /* newMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newMapViewController.swift; sourceTree = "<group>"; };
 		943D2BFA1A413ABC00516341 /* chatRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chatRoomViewController.swift; sourceTree = "<group>"; };
 		946414A91A38087C00B0B92B /* miles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = miles.jpg; path = ../../../UI_Images/miles.jpg; sourceTree = "<group>"; };
+		9468DF281A41749800F72122 /* currentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = currentLocationViewController.swift; sourceTree = "<group>"; };
 		946A0A431A2C9EB500479EF5 /* myViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController3.swift; sourceTree = "<group>"; };
 		946A0A451A2CA52A00479EF5 /* myViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController4.swift; sourceTree = "<group>"; };
 		946A0A471A2CB5BB00479EF5 /* facebook-default-no-profile-pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "facebook-default-no-profile-pic.jpg"; path = "../../../profile_user_images/facebook-default-no-profile-pic.jpg"; sourceTree = "<group>"; };
 		946A0A4B1A2CF11700479EF5 /* female_facebook_profile_picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = female_facebook_profile_picture.jpg; path = ../../../profile_user_images/female_facebook_profile_picture.jpg; sourceTree = "<group>"; };
-		9472E68B1A1A1CCC00475D7B /* myViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController2.swift; sourceTree = "<group>"; };
 		9472E68F1A1A26BC00475D7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9472E6DE1A23CAA900475D7B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9472E6DF1A23CAA900475D7B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -173,14 +171,13 @@
 				943B4BCD1A1A105A00119EA2 /* ViewController.swift */,
 				943B4BEF1A1A120800119EA2 /* Bridge-Header.h */,
 				943B4BCF1A1A105A00119EA2 /* Main.storyboard */,
-				9472E68B1A1A1CCC00475D7B /* myViewController2.swift */,
 				943B4BD21A1A105A00119EA2 /* Images.xcassets */,
 				943B4BD41A1A105A00119EA2 /* LaunchScreen.xib */,
 				943B4BC91A1A105A00119EA2 /* Supporting Files */,
 				946A0A431A2C9EB500479EF5 /* myViewController3.swift */,
 				946A0A451A2CA52A00479EF5 /* myViewController4.swift */,
-				943D2BF81A41313500516341 /* newMapViewController.swift */,
 				943D2BFA1A413ABC00516341 /* chatRoomViewController.swift */,
+				9468DF281A41749800F72122 /* currentLocationViewController.swift */,
 			);
 			path = Tocck;
 			sourceTree = "<group>";
@@ -316,8 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				943B4BCE1A1A105A00119EA2 /* ViewController.swift in Sources */,
-				9472E68C1A1A1CCC00475D7B /* myViewController2.swift in Sources */,
-				943D2BF91A41313500516341 /* newMapViewController.swift in Sources */,
+				9468DF291A41749800F72122 /* currentLocationViewController.swift in Sources */,
 				946A0A461A2CA52A00479EF5 /* myViewController4.swift in Sources */,
 				946A0A441A2C9EB500479EF5 /* myViewController3.swift in Sources */,
 				943B4BCC1A1A105A00119EA2 /* AppDelegate.swift in Sources */,
