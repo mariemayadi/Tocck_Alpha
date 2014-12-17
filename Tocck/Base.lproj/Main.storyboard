@@ -308,10 +308,20 @@
                                     <action selector="toMatchesPressed:" destination="Lbz-h0-eWO" eventType="touchUpInside" id="pmo-p1-dA7"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="C6m-zP-wT3">
+                                <rect key="frame" x="30" y="124" width="265" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Lbz-h0-eWO" id="w9J-qt-PV1"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Exact Location" id="n5c-Xo-8Y4"/>
+                    <connections>
+                        <outlet property="userMap" destination="C6m-zP-wT3" id="iyd-2b-H2D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dq-cr-Wns" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
