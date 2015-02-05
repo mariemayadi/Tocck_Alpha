@@ -121,7 +121,7 @@ class convertLatLongViewController: UIViewController {
         var user1Query = PFQuery(className:"farClose2Users")
         //user1Query.getObjectInBackgroundWithId(self.queriedMatches[0]) {
         //user1Query.getObjectInBackgroundWithId("XScYmQMi5Y") {
-        user1Query.getObjectInBackgroundWithId("tLk1GcywJb") {            
+        user1Query.getObjectInBackgroundWithId("tLk1GcywJb") {
             (person: PFObject!, error: NSError!) -> Void in
             if error == nil {
                 NSLog("%@", person)
